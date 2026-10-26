@@ -1,0 +1,14 @@
+# Ren'Py
+*.rpyc
+*.rpyb
+*.rpymc
+game/cache/
+game/saves/
+game/tl/*/*.rpyc
+
+# Служебное
+log.txt
+traceback.txt
+errors.txt
+docs/*.png
+docs/*.ps1
