@@ -44,11 +44,11 @@ image zhenya hurt    = sprite("images/zhenya_hurt.png",    _ph(PH_ZHENYA))
 
 # --- позиции: спрайт нормализуется по высоте, пропорции сохраняются
 transform pos_left:
-    xalign 0.18
+    xalign 0.16
     yalign 1.0
-    zoom 1.0
+    zoom 0.45
 
 transform pos_right:
-    xalign 0.82
+    xalign 0.86
     yalign 1.0
-    zoom 1.0
+    zoom 0.45
