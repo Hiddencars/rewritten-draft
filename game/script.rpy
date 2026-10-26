@@ -16,18 +16,9 @@ image bg kitchen  = Solid("#16130f")
 image bg bathroom = Solid("#0f1418")
 image bg black    = Solid("#000000")
 
-# --- «спрайты» (заглушки: цветной блок вместо персонажа) ---
-image rina idle = Transform(Solid("#2b2030"), xysize=(520, 860))
-image zhenya idle = Transform(Solid("#1b2028"), xysize=(520, 860))
+# --- спрайты подключаются в art.rpy (автоподстановка) ---
 
-# --- позиции на экране ---
-transform pos_left:
-    xalign 0.18
-    yalign 1.0
-
-transform pos_right:
-    xalign 0.82
-    yalign 1.0
+# --- позиции спрайтов определены в art.rpy ---
 
 # --- экраны мета-слоя ---
 screen draft_counter():
