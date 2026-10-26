@@ -27,6 +27,10 @@ define gui.show_name = True
 
 define config.version = "0.1"
 
+## Для разработки и скриншотов — оконный режим по умолчанию.
+
+define config.default_fullscreen = False
+
 ## Язык интерфейса: русский (перевод в game/tl/russian)
 
 define config.language = "russian"

@@ -1,4 +1,4 @@
-﻿################################################################################
+################################################################################
 ## Initialization
 ################################################################################
 
@@ -107,7 +107,7 @@ screen say(who, what):
                 style "namebox"
                 text who id "who"
 
-        text what id "what"
+        text what id "what" xalign 0.5 text_align 0.5
 
 
     ## If there's a side image, display it above the text. Do not display
@@ -131,11 +131,11 @@ style namebox_label is say_label
 
 style window:
     xalign 0.5
-    xfill True
+    xsize 1100
     yalign gui.textbox_yalign
     ysize gui.textbox_height
 
-    background Image("gui/textbox.png", xalign=0.5, yalign=1.0)
+    background Solid("#1c1c1c")
 
 style namebox:
     xpos gui.name_xpos
@@ -144,8 +144,8 @@ style namebox:
     ypos gui.name_ypos
     ysize gui.namebox_height
 
-    background Frame("gui/namebox.png", gui.namebox_borders, tile=gui.namebox_tile, xalign=gui.name_xalign)
-    padding gui.namebox_borders.padding
+    background None
+    padding (0, 0)
 
 style say_label:
     properties gui.text_properties("name", accent=True)
@@ -158,6 +158,10 @@ style say_dialogue:
     xpos gui.dialogue_xpos
     xsize gui.dialogue_width
     ypos gui.dialogue_ypos
+
+    ## выравнивание по центру, как в референсе
+    xalign 0.5
+    text_align 0.5
 
     adjust_spacing False
 
@@ -226,8 +230,19 @@ style choice_vbox:
 style choice_button is default:
     properties gui.button_properties("choice_button")
 
+    background Solid("#141414f2")
+    hover_background Solid("#e8ddc8")
+    selected_background Solid("#e8ddc8")
+    insensitive_background Solid("#0b0b0bf2")
+    padding (34, 12)
+
 style choice_button_text is default:
     properties gui.text_properties("choice_button")
+
+    color "#f2ede2"
+    hover_color "#0a0a0a"
+    outlines [ (3, "#0a0a0a", 0, 0) ]
+    hover_outlines [ (0, "#0a0a0a", 0, 0) ]
 
 
 ## Quick Menu screen ###########################################################

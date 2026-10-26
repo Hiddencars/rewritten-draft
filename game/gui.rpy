@@ -51,26 +51,26 @@ define gui.muted_color = "#4a2f3d"
 define gui.hover_muted_color = "#006e75"
 
 ## The colors used for dialogue and menu choice text.
-define gui.text_color = "#e9e4ee"
+define gui.text_color = "#f2ede2"
 define gui.interface_text_color = "#e9e4ee"
 
 
 ## Fonts and Font Sizes ########################################################
 
 ## The font used for in-game text.
-define gui.text_font = "DejaVuSans.ttf"
+define gui.text_font = "fonts/Neucha.ttf"
 
 ## The font used for character names.
-define gui.name_text_font = "DejaVuSans.ttf"
+define gui.name_text_font = "fonts/PTSerif-Bold.ttf"
 
 ## The font used for out-of-game text.
-define gui.interface_text_font = "DejaVuSans.ttf"
+define gui.interface_text_font = "fonts/Pangolin-Regular.ttf"
 
 ## The size of normal dialogue text.
-define gui.text_size = gui.scale(22)
+define gui.text_size = gui.scale(26)
 
 ## The size of character names.
-define gui.name_text_size = gui.scale(30)
+define gui.name_text_size = gui.scale(28)
 
 ## The size of text in the game's user interface.
 define gui.interface_text_size = gui.scale(22)
@@ -98,7 +98,7 @@ define gui.game_menu_background = "gui/game_menu.png"
 ## at a time.
 
 ## The height of the textbox containing dialogue.
-define gui.textbox_height = gui.scale(185)
+define gui.textbox_height = gui.scale(190)
 
 ## The placement of the textbox vertically on the screen. 0.0 is the top, 0.5 is
 ## center, and 1.0 is the bottom.
@@ -107,7 +107,7 @@ define gui.textbox_yalign = 1.0
 
 ## The placement of the speaking character's name, relative to the textbox.
 ## These can be a whole number of pixels from the left or top, or 0.5 to center.
-define gui.name_xpos = gui.scale(240)
+define gui.name_xpos = gui.scale(550)
 define gui.name_ypos = gui.scale(0)
 
 ## The horizontal alignment of the character's name. This can be 0.0 for
@@ -131,15 +131,15 @@ define gui.namebox_tile = False
 ## The placement of dialogue relative to the textbox. These can be a whole
 ## number of pixels relative to the left or top side of the textbox, or 0.5
 ## to center.
-define gui.dialogue_xpos = gui.scale(268)
+define gui.dialogue_xpos = gui.scale(80)
 define gui.dialogue_ypos = gui.scale(50)
 
 ## The maximum width of dialogue text, in pixels.
-define gui.dialogue_width = gui.scale(744)
+define gui.dialogue_width = gui.scale(940)
 
 ## The horizontal alignment of the dialogue text. This can be 0.0 for
 ## left-aligned, 0.5 for centered, and 1.0 for right-aligned.
-define gui.dialogue_text_xalign = 0.0
+define gui.dialogue_text_xalign = 0.5
 
 
 ## Buttons #####################################################################
@@ -212,7 +212,7 @@ define gui.choice_button_borders = Borders(gui.scale(100), gui.scale(5), gui.sca
 define gui.choice_button_text_font = gui.text_font
 define gui.choice_button_text_size = gui.text_size
 define gui.choice_button_text_xalign = 0.5
-define gui.choice_button_text_idle_color = "#cccccc"
+define gui.choice_button_text_idle_color = "#f2ede2"
 define gui.choice_button_text_hover_color = "#ffffff"
 define gui.choice_button_text_insensitive_color = "#444444"
 
@@ -479,3 +479,18 @@ init python:
 
         gui.nvl_button_width = gui.scale(1240)
         gui.nvl_button_xpos = gui.scale(20)
+
+
+## ---------------------------------------------------------------
+## Референсный стиль (The Coffin of Andy and Leyley):
+## белый текст с чёрной обводкой, центрирование, без плашки имени.
+## ---------------------------------------------------------------
+
+define gui.name_xalign = 0.5
+
+define gui.dialogue_text_outlines = [ (3, "#0a0a0a", 0, 0) ]
+define gui.name_text_outlines = [ (3, "#0a0a0a", 0, 0) ]
+define gui.choice_button_text_outlines = [ (3, "#0a0a0a", 0, 0) ]
+
+
+define gui.name_text_color = "#f2ede2"
