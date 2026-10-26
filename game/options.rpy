@@ -14,7 +14,7 @@
 ##
 ## The _() surrounding the string marks it as eligible for translation.
 
-define config.name = _("Черновик")
+define config.name = _("Rewritten Draft")
 
 
 ## Determines if the title given above is shown on the main menu
@@ -36,11 +36,11 @@ define config.language = "russian"
 ## the triple-quotes, and leave a blank line between paragraphs.
 
 define gui.about = _p("""
-«Черновик» — психологический хоррор о паре, которая не выходит из дома.
+Rewritten Draft — психологический хоррор о паре, которая не выходит из дома.
 
 Ты играешь Женю. Но Женя — это текст, который Рина пишет заново, реплика за репликой.
 
-Версия 0.1 — прототип: пролог и первая глава.
+Версия 0.1 — демо: пролог и первая глава.
 """)
 
 
@@ -48,7 +48,7 @@ define gui.about = _p("""
 ## built distribution. This must be ASCII-only, and must not contain
 ## spaces, colons, or semicolons.
 
-define build.name = "chernovik"
+define build.name = "rewritten-draft"
 
 
 ## Sounds and music ############################################################
@@ -155,7 +155,7 @@ default preferences.afm_time = 15
 ## This generally should not be changed, and if it is, should always be a
 ## literal string, not an expression.
 
-define config.save_directory = "chernovik-1"
+define config.save_directory = "rewritten-draft-1"
 
 
 ## Icon ########################################################################
