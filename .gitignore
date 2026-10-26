@@ -12,3 +12,5 @@ traceback.txt
 errors.txt
 docs/*.png
 docs/*.ps1
+
+docs/*.jpg
